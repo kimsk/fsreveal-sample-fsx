@@ -1,8 +1,8 @@
 ﻿(**
-- title : FsReveal 
+- title : FsReveal
 - description : Introduction to FsReveal
 - author : Karlkim Suwanmongkol
-- theme : Sky
+- theme : sky
 - transition : default
 
 ***
@@ -16,8 +16,8 @@
 
 ### Reveal.js
 
-- A framework for easily creating beautiful presentations using HTML.  
-  
+- A framework for easily creating beautiful presentations using HTML.
+
 > **Atwood's Law**: any application that can be written in JavaScript, will eventually be written in JavaScript.
 
 ***
@@ -39,13 +39,13 @@
 let a = 5
 let factorial x = [1..x] |> List.reduce (*)
 let c = factorial a
-(** 
+(**
 `c` is evaluated for you
 *)
 (*** include-value: c ***)
 (**
 
---- 
+---
 
 #### More F#
 
@@ -53,7 +53,7 @@ let c = factorial a
 [<Measure>] type sqft
 [<Measure>] type dollar
 let sizes = [|1700<sqft>;2100<sqft>;1900<sqft>;1300<sqft>|]
-let prices = [|53000<dollar>;44000<dollar>;59000<dollar>;82000<dollar>|] 
+let prices = [|53000<dollar>;44000<dollar>;59000<dollar>;82000<dollar>|]
 (**
 
 #### `prices.[0]/sizes.[0]`
@@ -104,7 +104,7 @@ let prices = [|53000<dollar>;44000<dollar>;59000<dollar>;82000<dollar>|]
 ---
 
 #### Haskell
- 
+
     [lang=haskell]
     recur_count k = 1 : 1 : zipWith recurAdd (recur_count k) (tail (recur_count k))
             where recurAdd x y = k * x + y
@@ -122,14 +122,14 @@ let prices = [|53000<dollar>;44000<dollar>;59000<dollar>;82000<dollar>|]
 ---
 
 ### SQL
- 
+
     [lang=sql]
-    select * 
-    from 
-      (select 1 as Id union all select 2 union all select 3) as X 
+    select *
+    from
+      (select 1 as Id union all select 2 union all select 3) as X
     where Id in (@Ids1, @Ids2, @Ids3)
 
-*sql from [Dapper](https://code.google.com/p/dapper-dot-net/)* 
+*sql from [Dapper](https://code.google.com/p/dapper-dot-net/)*
 
 ***
 
@@ -139,16 +139,16 @@ $ \Pr(A|B)=\frac{\Pr(B|A)\Pr(A)}{\Pr(B|A)\Pr(A)+\Pr(B|\neg A)\Pr(\neg A)} $
 
 ***
 
-### The Reality of a Developer's Life 
+### The Reality of a Developer's Life
 
 **When I show my boss that I've fixed a bug:**
-  
+
 ![When I show my boss that I've fixed a bug](http://www.topito.com/wp-content/uploads/2013/01/code-07.gif)
-  
+
 **When your regular expression returns what you expect:**
-  
+
 ![When your regular expression returns what you expect](http://www.topito.com/wp-content/uploads/2013/01/code-03.gif)
-  
+
 *from [The Reality of a Developer's Life - in GIFs, Of Course](http://server.dzone.com/articles/reality-developers-life-gifs)*
 
 *)
