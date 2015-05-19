@@ -28,9 +28,6 @@
 - Code syntax highlighting support.
 - It also evaluates your F# code and produce tooltips.
 
-' this is a speaker note
-' and here we have another one
-
 ***
 
 ### Syntax Highlighting
